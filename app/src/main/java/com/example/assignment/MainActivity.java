@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("ALREADY", MODE_PRIVATE);
         String str = sharedPreferences.getString("EXISTS", "");
 
-
+        final Toast addToDbToast=Toast.makeText(MainActivity.this,"Successfully Store To\n Local Database",Toast.LENGTH_SHORT);
         Thread t = new Thread() {
             @Override
             public void run() {
@@ -190,12 +190,14 @@ public class MainActivity extends AppCompatActivity {
                     count++;
 
                 }
+                addToDbToast.show();
             }
         };
         if (str.equals("")) {
+            toast("Wait Storing To DB");
             t.start();
             sharedPreferences.edit().putString("EXISTS", "true").commit();
-            toast("Successfully Store in Local Database ");
+
         }
 
     }
