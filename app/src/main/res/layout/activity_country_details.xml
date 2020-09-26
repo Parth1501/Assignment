@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="50dp">
+            <ImageView
+                android:layout_marginLeft="-30dp"
+                android:id="@+id/country_flag"
+                android:layout_width="300dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:maxWidth="175dp"
+                android:maxHeight="300dp"
+                android:minWidth="300dp"
+                android:minHeight="175dp" />
+            <TableLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/country_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:ellipsize="none"
+                        android:scrollHorizontally="false"
+                        android:layout_weight="1"
+                        android:maxLines="100"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Capital:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/country_capital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Name:"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Region:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/country_region"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Name:"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sub-Region:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/country_subregion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text=":"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Population:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/country_population"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Name:"
+                        android:textSize="15dp" />
+                </TableRow>
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Languages:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/country_languages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Name:"
+                        android:textSize="15dp"
+                         />
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Borders:"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/country_borders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:text="Name:"
+                        android:textSize="15dp"
+                         />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
